@@ -48,6 +48,19 @@ Depois, com o servidor rodando, acesse pelo navegador:
 
 O projeto usa o starter do Ollama, mas o Spring AI segue o mesmo padrão para outros provedores (OpenAI, Anthropic, Codex, etc). Basta trocar, no `pom.xml`, a dependência `spring-ai-starter-model-ollama` pela equivalente do provedor desejado (ex: `spring-ai-starter-model-anthropic`), e ajustar as propriedades correspondentes em `application.properties`.
 
+## Evidências de execução
+
+Como o projeto depende do Ollama rodando localmente, seguem prints comprovando a aplicação funcionando de ponta a ponta:
+
+**Aplicação subindo com sucesso:**
+![Aplicação iniciando](Comando - mvn spring-bootrun)
+
+**Endpoint `/ping` respondendo:**
+![Endpoint ping](Comando - httplocalhost8080ping)
+
+**Endpoint `/chat` conversando com o modelo:**
+![Endpoint chat](Comando - chatmensagem)
+
 ## Projeto para subir no GitHub
 
 ```bash
